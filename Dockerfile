@@ -27,7 +27,7 @@ RUN printf "#!/bin/bash\n/usr/sbin/apache2ctl -D FOREGROUND" > /startScript.sh
 RUN chmod +x /startScript.sh
 
 COPY . /var/www/html
-RUN cd /var/www/html
+# RUN cd /var/www/html
 # RUN chmod -R 0777 /var/www/html/writable
 
 RUN apt-get clean \
